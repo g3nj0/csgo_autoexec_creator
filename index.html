@@ -1,1 +1,42 @@
-hello world
+<html>
+<body>
+    <h1>CS:GO autoexec creator</h1><br />
+    <hr />
+    <form name="crosshair" method="post">
+        <fieldset>
+            <legend>Crosshair Settings</legend>
+            cl_crosshaircolor_r <input type="number"
+                                       name="crosshaircolorr"
+                                       id="crosshaircolorr"
+                                       value="50"
+                                       min="0"
+                                       max="255"
+                                       maxlength="3" /> 0 - 255 <br />
+            cl_crosshaircolor_g <input type="number" value="250" min="0" max="255" maxlength="3" name="crosshaircolorg" /> 0 - 255 <br />
+            cl_crosshaircolor_b <input type="number" value="50" min="0" max="255" maxlength="3" name="crosshaircolorb" /> 0 - 255 <br />
+            cl_crosshairalpha   <input type="number" value="200" min="0" max="255" maxlength="3" name="crosshairalpha" /> 0 - 255 <br /><br />
+            cl_crosshairstyle   <input type="number" value="1" min="0" max="4" maxlength="1" name="crosshairstyle" /> 0 - 4<br /><br />
+        </fieldset>
+    </form>
+    <textarea name="cfgtextarea"></textarea>
+</body>
+</html>
+
+<!--cl_crosshairalpha "200"
+cl_crosshaircolor "1" // Set crosshair color as defined in game_options.consoles.txt
+cl_crosshaircolor_b "50"
+cl_crosshaircolor_g "250"
+cl_crosshaircolor_r "50"
+cl_crosshairdot "0"
+cl_crosshairgap "0"
+cl_crosshairscale "0" // Crosshair scaling factor (deprecated)
+cl_crosshairsize "5"
+cl_crosshairstyle "1"
+cl_crosshairthickness "0"
+cl_crosshairusealpha "1"
+cl_crosshair_drawoutline "0" // Draws a black outline around the crosshair for better visibility
+cl_crosshair_dynamic_maxdist_splitratio "0" // this is the ratio used to determine how long the inner and outer xhair pips will be. [inner = cl_
+cl_crosshair_dynamic_splitalpha_innermod "1" // this is the alpha modification that will be used for the INNER crosshair pips once theyve split.
+cl_crosshair_dynamic_splitalpha_outermod "0" // this is the alpha modification that will be used for the OUTER crosshair pips once theyve split.
+cl_crosshair_dynamic_splitdist "7" // this is the distance that the crosshair pips will split into 2. (default is 7)
+cl_crosshair_outlinethickness "1" // Set how thick you want your crosshair outline to draw (0.1-3)--> 
