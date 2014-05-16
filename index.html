@@ -1,7 +1,7 @@
 <html>
 <body>
     <h1>CS:GO autoexec creator</h1><br />
-    <hr />
+    
     <form name="crosshair" method="post">
         <fieldset>
             <legend>Crosshair Settings</legend>
@@ -12,13 +12,41 @@
                                        min="0"
                                        max="255"
                                        maxlength="3" /> 0 - 255 <br />
-            cl_crosshaircolor_g <input type="number" value="250" min="0" max="255" maxlength="3" name="crosshaircolorg" /> 0 - 255 <br />
-            cl_crosshaircolor_b <input type="number" value="50" min="0" max="255" maxlength="3" name="crosshaircolorb" /> 0 - 255 <br />
-            cl_crosshairalpha   <input type="number" value="200" min="0" max="255" maxlength="3" name="crosshairalpha" /> 0 - 255 <br /><br />
-            cl_crosshairstyle   <input type="number" value="1" min="0" max="4" maxlength="1" name="crosshairstyle" /> 0 - 4<br /><br />
+            cl_crosshaircolor_g <input type="number"
+                                       name="crosshaircolorg"
+                                       id="crosshaircolorg"
+                                       value="250"
+                                       min="0"
+                                       max="255"
+                                       maxlength="3" /> 0 - 255 <br />
+            cl_crosshaircolor_b <input type="number"
+                                       name="crosshaircolorb"
+                                       id="crosshaircolorb" 
+                                       value="50" 
+                                       min="0" 
+                                       max="255" 
+                                       maxlength="3"  /> 0 - 255 <br />
+            cl_crosshairalpha   <input type="number" 
+                                       name="crosshairalpha"
+                                       id="crosshairalpha"
+                                       value="200" 
+                                       min="0" 
+                                       max="255" 
+                                       maxlength="3" /> 0 - 255 <br />
+            <hr />
+            cl_crosshairstyle   <input type="number" 
+                                       name="crosshairstyle"
+                                       value="1" 
+                                       min="0" 
+                                       max="4" 
+                                       maxlength="1" /> 0 - 4 <br />
         </fieldset>
     </form>
     <textarea name="cfgtextarea"></textarea>
+
+    <script src="jquery-2.1.1.js"></script>
+    <script src="jquerynumeric.js"></script>
+    <script src="printcfg.js"></script>
 </body>
 </html>
 
