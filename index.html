@@ -2,47 +2,95 @@
 <body>
     <h1>CS:GO autoexec creator</h1><br />
     
-    <form name="crosshair" method="post">
-        <fieldset>
+    <form id="crosshairform" method="post">
+        <fieldset id="crosshairfieldset">
             <legend>Crosshair Settings</legend>
-            cl_crosshaircolor_r <input type="number"
-                                       name="crosshaircolorr"
-                                       id="crosshaircolorr"
-                                       value="50"
-                                       min="0"
-                                       max="255"
-                                       maxlength="3" /> 0 - 255 <br />
-            cl_crosshaircolor_g <input type="number"
-                                       name="crosshaircolorg"
-                                       id="crosshaircolorg"
-                                       value="250"
-                                       min="0"
-                                       max="255"
-                                       maxlength="3" /> 0 - 255 <br />
-            cl_crosshaircolor_b <input type="number"
-                                       name="crosshaircolorb"
-                                       id="crosshaircolorb" 
-                                       value="50" 
-                                       min="0" 
-                                       max="255" 
-                                       maxlength="3"  /> 0 - 255 <br />
-            cl_crosshairalpha   <input type="number" 
-                                       name="crosshairalpha"
-                                       id="crosshairalpha"
-                                       value="200" 
-                                       min="0" 
-                                       max="255" 
-                                       maxlength="3" /> 0 - 255 <br />
+            <label for="xhair_colorpicker">Choose a crosshair color! Click here =></label>
+            <input type="color"
+                   name="crosshair"
+                   id="xhair_colorpicker"
+                   value="#323232"/><br />
+
+            <label for="crosshaircolorr" >cl_crosshaircolor_r</label>
+                <input type="range"
+                       name="crosshair"
+                       id="crosshaircolorr_slider"
+                       value="50"
+                       min="0" 
+                       max="255"
+                       oninput="this.form.crosshaircolorr.value=this.value"/>
+                <input type="number"
+                       name="crosshair"
+                       id="crosshaircolorr"
+                       value="50"
+                       min="0"
+                       max="255"
+                       maxlength="3" 
+                       oninput="this.form.crosshaircolorr_slider.value=this.value"/> 0 - 255 <br />
+
+            <label for="crosshaircolorg">cl_crosshaircolor_g</label>
+                <input type="range"
+                       name="crosshair"
+                       id="crosshaircolorg_slider"
+                       value="50"
+                       min="0"
+                       max="255"
+                       oninput="this.form.crosshaircolorg.value=this.value" />
+                <input type="number"
+                       name="crosshair"
+                       id="crosshaircolorg"
+                       value="50"
+                       min="0"
+                       max="255"
+                       maxlength="3" 
+                       oninput="this.form.crosshaircolorg_slider.value=this.value"/> 0 - 255 <br />
+            
+            <label for="crosshaircolorb">cl_crosshaircolor_b</label>
+                <input type="range"
+                       name="crosshair"
+                       id="crosshaircolorb_slider"
+                       value="50"
+                       min="0"
+                       max="255"
+                       oninput="this.form.crosshaircolorb.value=this.value" />
+                <input type="number"
+                       name="crosshair"
+                       id="crosshaircolorb"
+                       value="50"
+                       min="0"
+                       max="255"
+                       maxlength="3"
+                       oninput="this.form.crosshaircolorb_slider.value=this.value" /> 0 - 255 <br />
+
+            <label for="crosshairalpha">cl_crosshairalpha</label>
+                <input type="range"
+                       name="crosshair"
+                       id="crosshairalpha_slider"
+                       value="50"
+                       min="0"
+                       max="255"
+                       oninput="this.form.crosshairalpha.value=this.value" />
+                <input type="number"
+                       name="crosshair"
+                       id="crosshairalpha"
+                       value="200"
+                       min="0"
+                       max="255"
+                       maxlength="3"
+                       oninput="this.form.crosshairalpha_slider.value=this.value" /> 0 - 255 <br />
             <hr />
-            cl_crosshairstyle   <input type="number" 
-                                       name="crosshairstyle"
-                                       value="1" 
-                                       min="0" 
-                                       max="4" 
-                                       maxlength="1" /> 0 - 4 <br />
+            <label for="crosshairstyle">cl_crosshairstyle</label>
+                <input type="number"
+                       name="crosshair"
+                       id="crosshairstyle"
+                       value="1"
+                       min="0"
+                       max="4"
+                       maxlength="1" /> 0 - 4 <br />
+            
         </fieldset>
     </form>
-    <textarea name="cfgtextarea"></textarea>
+    <textarea name="cfgtextarea" id="cfgtextarea" rows="40" cols="120"></textarea>
 
     <script src="jquery-2.1.1.js"></script>
     <script src="jquerynumeric.js"></script>
