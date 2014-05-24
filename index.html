@@ -2,16 +2,202 @@
 <body>
     <h1>CS:GO autoexec creator</h1><br />
     
+    <form id="rateform">
+        <fieldset id="rateset">
+            <legend>Rates</legend>
+            <label for="rate">rate</label>
+            <input type="range"
+                   name="rate"
+                   id="rate_slider"
+                   value="128000"
+                   min="500"
+                   max="128000"
+                   oninput="this.form.ratenum.value=this.value" />
+            <input type="number"
+                   name="rate"
+                   id="ratenum"
+                   list="rate_suggestions"
+                   value="128000"
+                   min="500"
+                   max="128000"
+                   maxlength="6"
+                   oninput="this.form.rate_slider.value=this.value" /> 500 - 128000 <br />
+
+            <datalist id="rate_suggestions">
+                <option value="50000">
+                <option value="80000">
+                <option value="128000">
+            </datalist>
+
+            <label for="cmdrate">cl_cmdrate</label>
+            <input type="range"
+                   name="rate"
+                   id="cmdrate_slider"
+                   value="128"
+                   min="10"
+                   max="128"
+                   oninput="this.form.cmdrate.value=this.value" />
+            <input type="number"
+                   name="rate"
+                   id="cmdrate"
+                   value="128"
+                   min="10"
+                   max="128"
+                   maxlength="3"
+                   oninput="this.form.cmdrate_slider.value=this.value" /> 10 - 128 <br />
+
+            <label for="updaterate">cl_updaterate</label>
+            <input type="range"
+                   name="rate"
+                   id="updaterate_slider"
+                   value="128"
+                   min="10"
+                   max="128"
+                   oninput="this.form.updaterate.value=this.value" />
+            <input type="number"
+                   name="rate"
+                   id="updaterate"
+                   value="128"
+                   min="10"
+                   max="128"
+                   maxlength="3"
+                   oninput="this.form.updaterate_slider.value=this.value" /> 10 - 128 <br />
+
+            <label for="interp">cl_interp</label>
+            <input type="range"
+                   name="rate"
+                   id="interp_slider"
+                   value="0"
+                   min="0"
+                   max="0.5"
+                   step="0.01"
+                   oninput="this.form.interp.value=this.value" />
+            <input type="number"
+                   name="rate"
+                   id="interp"
+                   value="0"
+                   min="0"
+                   max="0.5"
+                   step="0.01"
+                   maxlength="3"
+                   oninput="this.form.interp_slider.value=this.value" /> 0 - 0.5 <br />
+
+            <label for="updaterate">cl_interp_ratio</label>
+            <input type="range"
+                   name="rate"
+                   id="interp_ratio_slider"
+                   value="1"
+                   min="1"
+                   max="2"
+                   step="0.01"
+                   oninput="this.form.interp_ratio.value=this.value" />
+            <input type="number"
+                   name="rate"
+                   id="interp_ratio"
+                   value="1"
+                   min="1"
+                   max="2"
+                   step="0.01"
+                   maxlength="3"
+                   oninput="this.form.interp_ratio_slider.value=this.value" /> 1 - 2 <br />
+        </fieldset>
+    </form>
+
+    <!--                                                          -->
+    <!--=================== HUD SETTINGS =========================-->
+    <!--                                                          -->
+
+    <form id="hudset">
+        <fieldset>
+            <legend>HUD Settings</legend>
+            <label for="showfps">cl_showfps</label>
+            <select id="showfps" name="hud">
+                <option value="0">0 : fps display off</option>
+                <option value="1">1 : shows only fps</option>
+                <option value="2">2 : fps + additional info</option>
+                <option value="3">3 : no fps display + unknown info</option>
+                <option value="4">4 : average fps + unknown info</option>
+            </select><br />
+
+            <label for="netgraph">net_graph</label>
+            <input type="checkbox"
+                   name="hud"
+                   id="netgraph" /> <br />
+
+            <label for="netgraph">net_graphproportionalfont</label>
+            <input type="checkbox"
+                   name="hud"
+                   id="netgraphfont" /> <br />
+
+            <label for="netgraphheight">net_graphheight</label>
+            <input type="range"
+                   name="hud"
+                   id="netgraphheight_slider"
+                   value="100"
+                   min="0"
+                   max="3000"
+                   oninput="this.form.netgraphheight.value = this.value" />
+            <input type="number"
+                   name="hud"
+                   id="netgraphheight"
+                   value="100"
+                   min="0"
+                   max="3000"
+                   maxlength="4"
+                   oninput="this.form.netgraphheight_slider.value = this.value" /> 0 - 3000 <br />
+
+            <label for="netgraphpos">net_graphpos</label>
+            <input type="range"
+                   name="hud"
+                   id="netgraphpos_slider"
+                   value="0"
+                   min="0"
+                   max="3000"
+                   oninput="this.form.netgraphpos.value = this.value" />
+            <input type="number"
+                   name="hud"
+                   id="netgraphpos"
+                   list="netgraphpos_suggestions"
+                   value="0"
+                   min="0"
+                   max="3000"
+                   maxlength="4"
+                   oninput="this.form.netgraphpos_slider.value = this.value" /> 0 - 3000 <br />
+
+            <datalist id="netgraphpos_suggestions">
+                <option value="0">0 : left</option>
+                <option value="1">1 : right</option>
+                <option value="2">2 : middle</option>
+            </datalist>
+
+        </fieldset>
+    </form>
+
+    <!--                                                          -->
+    <!--================= CROSSHAIR SETTINGS =====================-->
+    <!--                                                          -->
+
     <form id="crosshairform" method="post">
         <fieldset id="crosshairfieldset">
-            <legend>Crosshair Settings</legend>
+            <legend>Crosshair Settings</legend><br />
+            <label for="crosshairstyle">cl_crosshairstyle</label>
+                <select name="crosshairstyle">
+                    <option value="0">0 : Default Dynamic</option>
+                    <option value="1">1 : Default Static</option>
+                    <option value="2">2 : New Classic Dynamic</option>
+                    <option value="3">3 : Classic Dynamic</option>
+                    <option value="4">4 : Classic Static</option>
+                    <option value="5">5 : Classic Recoil Only</option>
+                </select>
+            <br /><br />
+            <hr />
             <label for="xhair_colorpicker">Choose a crosshair color! Click here =></label>
             <input type="color"
                    name="crosshair"
                    id="xhair_colorpicker"
-                   value="#323232"/><br />
+                   value="#32FA32"/><br />
 
-            <label for="crosshaircolorr" >cl_crosshaircolor_r</label>
+            <label for="crosshaircolorr">cl_crosshaircolor_r</label>
                 <input type="range"
                        name="crosshair"
                        id="crosshaircolorr_slider"
@@ -32,14 +218,14 @@
                 <input type="range"
                        name="crosshair"
                        id="crosshaircolorg_slider"
-                       value="50"
+                       value="250"
                        min="0"
                        max="255"
                        oninput="this.form.crosshaircolorg.value=this.value" />
                 <input type="number"
                        name="crosshair"
                        id="crosshaircolorg"
-                       value="50"
+                       value="250"
                        min="0"
                        max="255"
                        maxlength="3" 
@@ -66,7 +252,7 @@
                 <input type="range"
                        name="crosshair"
                        id="crosshairalpha_slider"
-                       value="50"
+                       value="200"
                        min="0"
                        max="255"
                        oninput="this.form.crosshairalpha.value=this.value" />
@@ -76,34 +262,68 @@
                        value="200"
                        min="0"
                        max="255"
-                       maxlength="3"
                        oninput="this.form.crosshairalpha_slider.value=this.value" /> 0 - 255 <br />
             <hr />
-            <label for="crosshairstyle">cl_crosshairstyle</label>
-                <input type="number"
-                       name="crosshair"
-                       id="crosshairstyle"
-                       value="1"
-                       min="0"
-                       max="4"
-                       maxlength="1" /> 0 - 4 <br />
-            
+          
+            <label for="crosshairgap">cl_crosshairdot</label>
+            <input type="checkbox"
+                   name="crosshair"
+                   id="crosshairdot" /> <br />
+
         </fieldset>
     </form>
-    <textarea name="cfgtextarea" id="cfgtextarea" rows="40" cols="120"></textarea>
 
+    <!--                                                        -->
+    <!--================= DOWNLOAD BUTTON ======================-->
+    <!--                                                        -->
+    <script src="js/swfobject.js"></script>
+    <script src="js/downloadify.min.js"></script>
+    <form>
+        <p id="downloadify">
+            You must have Flash 10 installed to download this file.<br /><br />
+        </p>
+    </form>
+    <script type="text/javascript">
+        Downloadify.create('downloadify', {
+            filename: function () {
+                return "autoexec.cfg";
+            },
+            data: function () {
+                return document.getElementById('cfgtextarea').value.replace(/\n/g, "\r\n").replace(/\r\r/g, "\r");;
+            },
+            onComplete: function () {
+                alert('Your File Has Been Saved!');
+            },
+            onCancel: function () {
+                alert('You have cancelled the saving of this file.');
+            },
+            onError: function () {
+                alert('You must put something in the File Contents or there will be nothing to save!');
+            },
+            transparent: false,
+            swf: 'media/downloadify.swf',
+            downloadImage: 'images/download.png',
+            width: 100,
+            height: 30,
+            transparent: true,
+            append: true
+        });
+    </script><br />
+    <form action="./" method="post">
+        <textarea name="cfgtextarea" id="cfgtextarea" rows="40" cols="80"></textarea>
+    </form><br />
+    
+    
+    
     <script src="jquery-2.1.1.js"></script>
-    <script src="jquerynumeric.js"></script>
     <script src="printcfg.js"></script>
+    
 </body>
 </html>
 
-<!--cl_crosshairalpha "200"
+<!--
 cl_crosshaircolor "1" // Set crosshair color as defined in game_options.consoles.txt
-cl_crosshaircolor_b "50"
-cl_crosshaircolor_g "250"
-cl_crosshaircolor_r "50"
-cl_crosshairdot "0"
+
 cl_crosshairgap "0"
 cl_crosshairscale "0" // Crosshair scaling factor (deprecated)
 cl_crosshairsize "5"
