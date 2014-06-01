@@ -118,7 +118,7 @@ DecodeCfgValues = function () {
             }
         }
 
-        if($(this).is($('#crosshairgap')))
+        if ($(this).is($('#crosshairgap_slider')))
              rangeValue -= 100;
 
         $(this).val(rangeValue);
