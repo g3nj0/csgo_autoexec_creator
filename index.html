@@ -1,7 +1,10 @@
-<html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 <body>
     <h1>CS:GO autoexec creator</h1><br />
-    
+
     <form id="rateform">
         <fieldset id="rateset">
             <legend><b>Rates</b></legend>
@@ -12,7 +15,7 @@
                    value="128000"
                    min="500"
                    max="128000"
-                   oninput="this.form.ratenum.value=this.value" />
+                   onchange="this.form.ratenum.value=this.value" />
             <input type="number"
                    name="rate"
                    id="ratenum"
@@ -21,12 +24,15 @@
                    min="500"
                    max="128000"
                    maxlength="6"
-                   oninput="this.form.rate_slider.value=this.value" /> 500 - 128000 <br />
+                   onchange="this.form.rate_slider.value=this.value" /> 500 - 128000 <br />
 
             <datalist id="rate_suggestions">
                 <option value="50000">
+                </option>
                 <option value="80000">
+                </option>
                 <option value="128000">
+                </option>
             </datalist>
 
             <label for="cmdrate">cl_cmdrate</label>
@@ -36,7 +42,7 @@
                    value="128"
                    min="10"
                    max="128"
-                   oninput="this.form.cmdrate.value=this.value" />
+                   onchange="this.form.cmdrate.value=this.value" />
             <input type="number"
                    name="rate"
                    id="cmdrate"
@@ -44,7 +50,7 @@
                    min="10"
                    max="128"
                    maxlength="3"
-                   oninput="this.form.cmdrate_slider.value=this.value" /> 10 - 128 <br />
+                   onchange="this.form.cmdrate_slider.value=this.value" /> 10 - 128 <br />
 
             <label for="updaterate">cl_updaterate</label>
             <input type="range"
@@ -53,7 +59,7 @@
                    value="128"
                    min="10"
                    max="128"
-                   oninput="this.form.updaterate.value=this.value" />
+                   onchange="this.form.updaterate.value=this.value" />
             <input type="number"
                    name="rate"
                    id="updaterate"
@@ -61,7 +67,7 @@
                    min="10"
                    max="128"
                    maxlength="3"
-                   oninput="this.form.updaterate_slider.value=this.value" /> 10 - 128 <br />
+                   onchange="this.form.updaterate_slider.value=this.value" /> 10 - 128 <br />
 
             <label for="interp">cl_interp</label>
             <input type="range"
@@ -71,7 +77,7 @@
                    min="0"
                    max="0.5"
                    step="0.01"
-                   oninput="this.form.interp.value=this.value" />
+                   onchange="this.form.interp.value=this.value" />
             <input type="number"
                    name="rate"
                    id="interp"
@@ -80,7 +86,7 @@
                    max="0.5"
                    step="0.01"
                    maxlength="3"
-                   oninput="this.form.interp_slider.value=this.value" /> 0 - 0.5 <br />
+                   onchange="this.form.interp_slider.value=this.value" /> 0 - 0.5 <br />
 
             <label for="updaterate">cl_interp_ratio</label>
             <input type="range"
@@ -90,7 +96,7 @@
                    min="1"
                    max="2"
                    step="0.01"
-                   oninput="this.form.interp_ratio.value=this.value" />
+                   onchange="this.form.interp_ratio.value=this.value" />
             <input type="number"
                    name="rate"
                    id="interp_ratio"
@@ -99,7 +105,7 @@
                    max="2"
                    step="0.01"
                    maxlength="3"
-                   oninput="this.form.interp_ratio_slider.value=this.value" /> 1 - 2 <br />
+                   onchange="this.form.interp_ratio_slider.value=this.value" /> 1 - 2 <br />
         </fieldset>
     </form>
 
@@ -118,7 +124,7 @@
                    step="0.01"
                    min="1.6"
                    max="2.6"
-                   oninput="this.form.gamma.value = this.value" />
+                   onchange="this.form.gamma.value = this.value" />
             <input type="number"
                    name="video"
                    id="gamma"
@@ -127,7 +133,7 @@
                    min="1.6"
                    max="2.6"
                    maxlength="3"
-                   oninput="this.form.gamma_slider.value = this.value" /> 1.6 - 2.6 <br />
+                   onchange="this.form.gamma_slider.value = this.value" /> 1.6 - 2.6 <br />
 
             <label for="maxfps">Max FPS</label>
             <input type="range"
@@ -136,7 +142,7 @@
                    value="120"
                    min="0"
                    max="300"
-                   oninput="this.form.maxfps.value = this.value" />
+                   onchange="this.form.maxfps.value = this.value" />
             <input type="number"
                    name="video"
                    id="maxfps"
@@ -144,7 +150,7 @@
                    min="0"
                    max="300"
                    maxlength="3"
-                   oninput="this.form.maxfps_slider.value = this.value" /> 0 - 300 <br />
+                   onchange="this.form.maxfps_slider.value = this.value" /> 0 - 300 <br />
 
             <label for="maxfps_menu">Max FPS in Menu</label>
             <input type="range"
@@ -153,7 +159,7 @@
                    value="120"
                    min="0"
                    max="300"
-                   oninput="this.form.maxfps_menu.value = this.value" />
+                   onchange="this.form.maxfps_menu.value = this.value" />
             <input type="number"
                    name="video"
                    id="maxfps_menu"
@@ -161,7 +167,7 @@
                    min="0"
                    max="300"
                    maxlength="3"
-                   oninput="this.form.maxfps_menu_slider.value = this.value" /> 0 - 300 <br />
+                   onchange="this.form.maxfps_menu_slider.value = this.value" /> 0 - 300 <br />
 
             <label for="vsync">Vertical Sync</label>
             <input type="checkbox"
@@ -191,7 +197,7 @@
                    step="0.01"
                    min="0"
                    max="1.0"
-                   oninput="this.form.volume.value = this.value" />
+                   onchange="this.form.volume.value = this.value" />
             <input type="number"
                    name="audio"
                    id="volume"
@@ -200,7 +206,7 @@
                    min="0.0"
                    max="1.0"
                    maxlength="3"
-                   oninput="this.form.volume_slider.value = this.value" /> 0.0 - 1.0 <br />
+                   onchange="this.form.volume_slider.value = this.value" /> 0.0 - 1.0 <br />
 
             <label for="voiceenable">Voice Enable</label>
             <input type="checkbox"
@@ -215,7 +221,7 @@
                    step="0.01"
                    min="0"
                    max="1.0"
-                   oninput="this.form.voicescale.value = this.value" />
+                   onchange="this.form.voicescale.value = this.value" />
             <input type="number"
                    name="audio"
                    id="voicescale"
@@ -224,7 +230,7 @@
                    min="0.0"
                    max="1.0"
                    maxlength="3"
-                   oninput="this.form.voicescale_slider.value = this.value" /> 0.0 - 1.0 <br />
+                   onchange="this.form.voicescale_slider.value = this.value" /> 0.0 - 1.0 <br />
 
             <label for="speaker">Speaker Config</label>
             <select name="speaker">
@@ -234,7 +240,7 @@
                 <option value="4">4 : 2 Speakers</option>
                 <option value="6">6 : 5.1 Surround Sound</option>
             </select><br />
-            
+
             <label for="music">Music Volume</label>
             <input type="range"
                    name="audio"
@@ -243,7 +249,7 @@
                    step="0.01"
                    min="0"
                    max="1.0"
-                   oninput="this.form.music.value = this.value" />
+                   onchange="this.form.music.value = this.value" />
             <input type="number"
                    name="audio"
                    id="music"
@@ -252,7 +258,7 @@
                    min="0.0"
                    max="1.0"
                    maxlength="3"
-                   oninput="this.form.music_slider.value = this.value" /> 0.0 - 1.0 <br />
+                   onchange="this.form.music_slider.value = this.value" /> 0.0 - 1.0 <br />
 
             <label for="soundmixahead">Sound Mix Ahead</label>
             <input type="range"
@@ -262,7 +268,7 @@
                    step="0.05"
                    min="0.0"
                    max="1.0"
-                   oninput="this.form.soundmixahead.value = this.value" />
+                   onchange="this.form.soundmixahead.value = this.value" />
             <input type="number"
                    name="audio"
                    id="soundmixahead"
@@ -271,7 +277,7 @@
                    min="0.0"
                    max="1.0"
                    maxlength="3"
-                   oninput="this.form.soundmixahead_slider.value = this.value" /> 0.0 - 1.0 <br />
+                   onchange="this.form.soundmixahead_slider.value = this.value" /> 0.0 - 1.0 <br />
 
             <label for="panexp">Headphone Pan Exponent</label>
             <input type="range"
@@ -281,7 +287,7 @@
                    step="0.01"
                    min="0.0"
                    max="2.0"
-                   oninput="this.form.panexp.value = this.value" />
+                   onchange="this.form.panexp.value = this.value" />
             <input type="number"
                    name="audio"
                    id="panexp"
@@ -290,7 +296,7 @@
                    min="0.0"
                    max="2.0"
                    maxlength="3"
-                   oninput="this.form.panexp_slider.value = this.value" /> 0.0 - 2.0 <br />
+                   onchange="this.form.panexp_slider.value = this.value" /> 0.0 - 2.0 <br />
 
             <label for="panrad">Headphone Pan Radial Weight</label>
             <input type="range"
@@ -300,7 +306,7 @@
                    step="0.01"
                    min="0.0"
                    max="2.0"
-                   oninput="this.form.panrad.value = this.value" />
+                   onchange="this.form.panrad.value = this.value" />
             <input type="number"
                    name="audio"
                    id="panrad"
@@ -309,7 +315,7 @@
                    min="0.0"
                    max="2.0"
                    maxlength="3"
-                   oninput="this.form.panrad_slider.value = this.value" /> 0.0 - 2.0 <br />
+                   onchange="this.form.panrad_slider.value = this.value" /> 0.0 - 2.0 <br />
 
             <label for="legacy">Legacy Surround</label>
             <input type="checkbox"
@@ -343,7 +349,7 @@
                    step="0.01"
                    min="0.5"
                    max="0.95"
-                   oninput="this.form.hudscale.value = this.value" />
+                   onchange="this.form.hudscale.value = this.value" />
             <input type="number"
                    name="hud"
                    id="hudscale"
@@ -352,7 +358,7 @@
                    min="0.5"
                    max="0.95"
                    maxlength="4"
-                   oninput="this.form.hudscale_slider.value = this.value" />0.5 - 0.95<br />
+                   onchange="this.form.hudscale_slider.value = this.value" />0.5 - 0.95<br />
 
             <label for="hudsafex">HUD Safe X</label>
             <input type="range"
@@ -362,7 +368,7 @@
                    step="0.01"
                    min="0.85"
                    max="1.00"
-                   oninput="this.form.hudsafex.value = this.value" />
+                   onchange="this.form.hudsafex.value = this.value" />
             <input type="number"
                    name="hud"
                    id="hudsafex"
@@ -371,7 +377,7 @@
                    min="0.85"
                    max="1.00"
                    maxlength="4"
-                   oninput="this.form.hudsafex_slider.value = this.value" /> 0.85 - 1.00 <br />
+                   onchange="this.form.hudsafex_slider.value = this.value" /> 0.85 - 1.00 <br />
 
             <label for="hudsafey">HUD Safe Y</label>
             <input type="range"
@@ -381,7 +387,7 @@
                    step="0.01"
                    min="0.85"
                    max="1.00"
-                   oninput="this.form.hudsafey.value = this.value" />
+                   onchange="this.form.hudsafey.value = this.value" />
             <input type="number"
                    name="hud"
                    id="hudsafey"
@@ -390,7 +396,7 @@
                    min="0.85"
                    max="1.00"
                    maxlength="4"
-                   oninput="this.form.hudsafey_slider.value = this.value" /> 0.85 - 1.00 <br />
+                   onchange="this.form.hudsafey_slider.value = this.value" /> 0.85 - 1.00 <br />
 
             <label for="hudalpha">HUD Background Alpha</label>
             <input type="range"
@@ -400,7 +406,7 @@
                    step="0.01"
                    min="0.0"
                    max="1.0"
-                   oninput="this.form.hudalpha.value = this.value" />
+                   onchange="this.form.hudalpha.value = this.value" />
             <input type="number"
                    name="hud"
                    id="hudalpha"
@@ -409,7 +415,7 @@
                    min="0.0"
                    max="1.0"
                    maxlength="4"
-                   oninput="this.form.hudalpha_slider.value = this.value" /> 0.0- 1.0 <br />
+                   onchange="this.form.hudalpha_slider.value = this.value" /> 0.0- 1.0 <br />
 
             <label for="hudcolor">HUD Color</label>
             <select id="hudcolor" name="hud">
@@ -476,7 +482,7 @@
                    step="0.01"
                    min="0.8"
                    max="1.3"
-                   oninput="this.form.hudradarscale.value = this.value" />
+                   onchange="this.form.hudradarscale.value = this.value" />
             <input type="number"
                    name="hud"
                    id="hudradarscale"
@@ -485,7 +491,7 @@
                    min="0.8"
                    max="1.3"
                    maxlength="4"
-                   oninput="this.form.hudradarscale_slider.value = this.value" /> 0.8 - 1.3 <br />
+                   onchange="this.form.hudradarscale_slider.value = this.value" /> 0.8 - 1.3 <br />
 
             <label for="radarmapscale">Radar Map Scale</label>
             <input type="range"
@@ -495,7 +501,7 @@
                    step="0.01"
                    min="0.25"
                    max="1.0"
-                   oninput="this.form.radarmapscale.value = this.value" />
+                   onchange="this.form.radarmapscale.value = this.value" />
             <input type="number"
                    name="hud"
                    id="radarmapscale"
@@ -504,7 +510,7 @@
                    min="0.25"
                    max="1.0"
                    maxlength="4"
-                   oninput="this.form.radarmapscale_slider.value = this.value" /> 0.25 - 1.0 <br />
+                   onchange="this.form.radarmapscale_slider.value = this.value" /> 0.25 - 1.0 <br />
 
             <label for="radariconscale">Radar Icon Scale</label>
             <input type="range"
@@ -514,7 +520,7 @@
                    step="0.01"
                    min="0.4"
                    max="1.0"
-                   oninput="this.form.radariconscale.value = this.value" />
+                   onchange="this.form.radariconscale.value = this.value" />
             <input type="number"
                    name="hud"
                    id="radariconscale"
@@ -523,7 +529,7 @@
                    min="0.4"
                    max="1.0"
                    maxlength="4"
-                   oninput="this.form.radariconscale_slider.value = this.value" /> 0.4 - 1.0 <br />
+                   onchange="this.form.radariconscale_slider.value = this.value" /> 0.4 - 1.0 <br />
 
             <label for="radarcentered">Radar Always Centered</label>
             <input type="checkbox"
@@ -536,7 +542,7 @@
                    id="radarrotates" /> <br />
 
             <hr /> <!--===================================================-->
-            
+
             <label for="developer">Developer</label>
             <input type="checkbox"
                    name="hud"
@@ -586,7 +592,7 @@
                    value="100"
                    min="0"
                    max="3000"
-                   oninput="this.form.netgraphheight.value = this.value" />
+                   onchange="this.form.netgraphheight.value = this.value" />
             <input type="number"
                    name="hud"
                    id="netgraphheight"
@@ -594,7 +600,7 @@
                    min="0"
                    max="3000"
                    maxlength="4"
-                   oninput="this.form.netgraphheight_slider.value = this.value" /> 0 - 3000 <br />
+                   onchange="this.form.netgraphheight_slider.value = this.value" /> 0 - 3000 <br />
 
             <label for="netgraphpos">net_graphpos</label>
             <input type="range"
@@ -603,7 +609,7 @@
                    value="0"
                    min="0"
                    max="3000"
-                   oninput="this.form.netgraphpos.value = this.value" />
+                   onchange="this.form.netgraphpos.value = this.value" />
             <input type="number"
                    name="hud"
                    id="netgraphpos"
@@ -612,7 +618,7 @@
                    min="0"
                    max="3000"
                    maxlength="4"
-                   oninput="this.form.netgraphpos_slider.value = this.value" /> 0 - 3000 <br />
+                   onchange="this.form.netgraphpos_slider.value = this.value" /> 0 - 3000 <br />
 
             <datalist id="netgraphpos_suggestions">
                 <option value="0">0 : left</option>
@@ -637,7 +643,7 @@
                    value="5"
                    min="5"
                    max="30"
-                   oninput="this.form.lowerbobamt.value = this.value" />
+                   onchange="this.form.lowerbobamt.value = this.value" />
             <input type="number"
                    name="viewmodel"
                    id="lowerbobamt"
@@ -645,7 +651,7 @@
                    min="5"
                    max="30"
                    maxlength="4"
-                   oninput="this.form.lowerbobamt_slider.value = this.value" /> 5 - 30 <br />
+                   onchange="this.form.lowerbobamt_slider.value = this.value" /> 5 - 30 <br />
 
             <label for="boblat">Bob Lateral Amount</label>
             <input type="range"
@@ -655,7 +661,7 @@
                    step="0.01"
                    min="0.1"
                    max="2"
-                   oninput="this.form.boblat.value = this.value" />
+                   onchange="this.form.boblat.value = this.value" />
             <input type="number"
                    name="viewmodel"
                    id="boblat"
@@ -664,7 +670,7 @@
                    min="0.1"
                    max="2"
                    maxlength="4"
-                   oninput="this.form.boblat_slider.value = this.value" /> 0.1 - 2 <br />
+                   onchange="this.form.boblat_slider.value = this.value" /> 0.1 - 2 <br />
 
             <label for="bobvert">Bob Vert Amount</label>
             <input type="range"
@@ -674,7 +680,7 @@
                    step="0.01"
                    min="0.1"
                    max="2"
-                   oninput="this.form.bobvert.value = this.value" />
+                   onchange="this.form.bobvert.value = this.value" />
             <input type="number"
                    name="viewmodel"
                    id="bobvert"
@@ -683,7 +689,7 @@
                    min="0.1"
                    max="2"
                    maxlength="4"
-                   oninput="this.form.bobvert_slider.value = this.value" /> 0.1 - 2 <br />
+                   onchange="this.form.bobvert_slider.value = this.value" /> 0.1 - 2 <br />
 
             <label for="viewmodel_shift_left">Viewmodel Left Shift Amount</label>
             <input type="range"
@@ -693,7 +699,7 @@
                    step="0.01"
                    min="0.5"
                    max="2"
-                   oninput="this.form.viewmodel_shift_left.value = this.value" />
+                   onchange="this.form.viewmodel_shift_left.value = this.value" />
             <input type="number"
                    name="viewmodel"
                    id="viewmodel_shift_left"
@@ -702,7 +708,7 @@
                    min="0.5"
                    max="2"
                    maxlength="4"
-                   oninput="this.form.viewmodel_shift_left_slider.value = this.value" /> 0.5 - 2 <br />
+                   onchange="this.form.viewmodel_shift_left_slider.value = this.value" /> 0.5 - 2 <br />
 
             <label for="viewmodel_shift_right">Viewmodel Right Shift Amount</label>
             <input type="range"
@@ -712,7 +718,7 @@
                    step="0.05"
                    min="0.25"
                    max="2"
-                   oninput="this.form.viewmodel_shift_right.value = this.value" />
+                   onchange="this.form.viewmodel_shift_right.value = this.value" />
             <input type="number"
                    name="viewmodel"
                    id="viewmodel_shift_right"
@@ -721,7 +727,7 @@
                    min="0.25"
                    max="2"
                    maxlength="4"
-                   oninput="this.form.viewmodel_shift_right_slider.value = this.value" /> 0.25 - 2 <br />
+                   onchange="this.form.viewmodel_shift_right_slider.value = this.value" /> 0.25 - 2 <br />
             <hr />
             <label for="viewmodel_preset">Viewmodel Preset Positions</label>
             <select name="viewmodel_preset">
@@ -739,7 +745,7 @@
                    value="68"
                    min="54"
                    max="68"
-                   oninput="this.form.viewmodel_fov.value = this.value" />
+                   onchange="this.form.viewmodel_fov.value = this.value" />
             <input type="number"
                    name="viewmodel"
                    id="viewmodel_fov"
@@ -747,7 +753,7 @@
                    min="54"
                    max="68"
                    maxlength="2"
-                   oninput="this.form.viewmodel_fov_slider.value = this.value" /> 54 - 68 <br />
+                   onchange="this.form.viewmodel_fov_slider.value = this.value" /> 54 - 68 <br />
 
             <label for="viewmodel_offset_x">Viewmodel Offset X</label>
             <input type="range"
@@ -757,7 +763,7 @@
                    step="0.01"
                    min="-2"
                    max="2.5"
-                   oninput="this.form.viewmodel_offset_x.value = this.value" />
+                   onchange="this.form.viewmodel_offset_x.value = this.value" />
             <input type="number"
                    name="viewmodel"
                    id="viewmodel_offset_x"
@@ -766,7 +772,7 @@
                    min="-2"
                    max="2.5"
                    maxlength="4"
-                   oninput="this.form.viewmodel_offset_x_slider.value = this.value" /> -2 - 2.5 <br />
+                   onchange="this.form.viewmodel_offset_x_slider.value = this.value" /> -2 - 2.5 <br />
 
             <label for="viewmodel_offset_y">Viewmodel Offset Y</label>
             <input type="range"
@@ -776,7 +782,7 @@
                    step="0.01"
                    min="-2"
                    max="2"
-                   oninput="this.form.viewmodel_offset_y.value = this.value" />
+                   onchange="this.form.viewmodel_offset_y.value = this.value" />
             <input type="number"
                    name="viewmodel"
                    id="viewmodel_offset_y"
@@ -785,7 +791,7 @@
                    min="-2"
                    max="2"
                    maxlength="4"
-                   oninput="this.form.viewmodel_offset_y_slider.value = this.value" /> -2 - 2 <br />
+                   onchange="this.form.viewmodel_offset_y_slider.value = this.value" /> -2 - 2 <br />
 
             <label for="viewmodel_offset_z">Viewmodel Offset Z</label>
             <input type="range"
@@ -795,7 +801,7 @@
                    step="0.01"
                    min="-2"
                    max="2"
-                   oninput="this.form.viewmodel_offset_z.value = this.value" />
+                   onchange="this.form.viewmodel_offset_z.value = this.value" />
             <input type="number"
                    name="viewmodel"
                    id="viewmodel_offset_z"
@@ -804,7 +810,7 @@
                    min="-2"
                    max="2"
                    maxlength="4"
-                   oninput="this.form.viewmodel_offset_z_slider.value = this.value" /> -2 - 2 <br />
+                   onchange="this.form.viewmodel_offset_z_slider.value = this.value" /> -2 - 2 <br />
         </fieldset>
     </form>
 
@@ -823,7 +829,7 @@
                    step="0.01"
                    min="0.0"
                    max="10.0"
-                   oninput="this.form.sens.value = this.value" />
+                   onchange="this.form.sens.value = this.value" />
             <input type="number"
                    name="mouse"
                    id="sens"
@@ -832,7 +838,7 @@
                    min="0.0"
                    max="10.0"
                    maxlength="4"
-                   oninput="this.form.sens_slider.value = this.value" /> 0.0 - 10.0 <br />
+                   onchange="this.form.sens_slider.value = this.value" /> 0.0 - 10.0 <br />
 
             <label for="sens">Zoom Sensitivity</label>
             <input type="range"
@@ -842,7 +848,7 @@
                    step="0.01"
                    min="0.0"
                    max="10.0"
-                   oninput="this.form.zoom.value = this.value" />
+                   onchange="this.form.zoom.value = this.value" />
             <input type="number"
                    name="mouse"
                    id="zoom"
@@ -851,7 +857,7 @@
                    min="0.0"
                    max="10.0"
                    maxlength="4"
-                   oninput="this.form.zoom_slider.value = this.value" /> 0.0 - 10.0 <br />
+                   onchange="this.form.zoom_slider.value = this.value" /> 0.0 - 10.0 <br />
 
             <label for="raw">Raw Input</label>
             <input type="checkbox"
@@ -866,7 +872,7 @@
                    step="0.01"
                    min="0.0"
                    max="10.0"
-                   oninput="this.form.accel.value = this.value" />
+                   onchange="this.form.accel.value = this.value" />
             <input type="number"
                    name="mouse"
                    id="accel"
@@ -875,7 +881,7 @@
                    min="0.0"
                    max="10.0"
                    maxlength="4"
-                   oninput="this.form.accel_slider.value = this.value" /> 0.0 - 10.0 <br />
+                   onchange="this.form.accel_slider.value = this.value" /> 0.0 - 10.0 <br />
         </fieldset>
     </form>
 
@@ -887,14 +893,14 @@
         <fieldset id="crosshairfieldset">
             <legend><b>Crosshair Settings</b></legend><br />
             <label for="crosshairstyle">Crosshair Style</label>
-                <select name="crosshairstyle">
-                    <option value="0">0 : Default Dynamic</option>
-                    <option value="1">1 : Default Static</option>
-                    <option value="2">2 : New Classic Dynamic</option>
-                    <option value="3">3 : Classic Dynamic</option>
-                    <option value="4">4 : Classic Static</option>
-                    <option value="5">5 : Classic Recoil Only</option>
-                </select>
+            <select name="crosshairstyle">
+                <option value="0">0 : Default Dynamic</option>
+                <option value="1">1 : Default Static</option>
+                <option value="2">2 : New Classic Dynamic</option>
+                <option value="3">3 : Classic Dynamic</option>
+                <option value="4">4 : Classic Static</option>
+                <option value="5">5 : Classic Recoil Only</option>
+            </select>
             <br />
             <br />
             <label>These settings only apply to Crosshair Style 2</label><br />
@@ -906,7 +912,7 @@
                    step="0.05"
                    min="0"
                    max="1"
-                   oninput="this.form.crosshairdynmaxdist.value = this.value" />
+                   onchange="this.form.crosshairdynmaxdist.value = this.value" />
             <input type="number"
                    name="crosshair"
                    id="crosshairdynmaxdist"
@@ -915,7 +921,7 @@
                    min="0"
                    max="1"
                    maxlength="4"
-                   oninput="this.form.crosshairdynmaxdist_slider.value = this.value" /> 0 - 1 <br />
+                   onchange="this.form.crosshairdynmaxdist_slider.value = this.value" /> 0 - 1 <br />
 
             <label for="crosshairalphainner">Dynamic Alpha Inner Mod</label>
             <input type="range"
@@ -925,7 +931,7 @@
                    step="0.05"
                    min="0"
                    max="1"
-                   oninput="this.form.crosshairalphainner.value = this.value" />
+                   onchange="this.form.crosshairalphainner.value = this.value" />
             <input type="number"
                    name="crosshair"
                    id="crosshairalphainner"
@@ -934,7 +940,7 @@
                    min="0"
                    max="1"
                    maxlength="4"
-                   oninput="this.form.crosshairalphainner_slider.value = this.value" /> 0 - 1 <br />
+                   onchange="this.form.crosshairalphainner_slider.value = this.value" /> 0 - 1 <br />
 
             <label for="crosshairalphaouter">Dynamic Alpha Outer Mod</label>
             <input type="range"
@@ -944,7 +950,7 @@
                    step="0.05"
                    min="0.3"
                    max="1"
-                   oninput="this.form.crosshairalphaouter.value = this.value" />
+                   onchange="this.form.crosshairalphaouter.value = this.value" />
             <input type="number"
                    name="crosshair"
                    id="crosshairalphaouter"
@@ -953,7 +959,7 @@
                    min="0.3"
                    max="1"
                    maxlength="4"
-                   oninput="this.form.crosshairalphaouter_slider.value = this.value" /> 0 - 1 <br />
+                   onchange="this.form.crosshairalphaouter_slider.value = this.value" /> 0 - 1 <br />
 
             <label for="crosshairsplitdist">Dynamic Split Distance</label>
             <input type="range"
@@ -962,7 +968,7 @@
                    value="10"
                    min="0"
                    max="100"
-                   oninput="this.form.crosshairsplitdist.value = this.value" />
+                   onchange="this.form.crosshairsplitdist.value = this.value" />
             <input type="number"
                    name="crosshair"
                    id="crosshairsplitdist"
@@ -970,7 +976,7 @@
                    min="0"
                    max="100"
                    maxlength="4"
-                   oninput="this.form.crosshairsplitdist_slider.value = this.value" /> 0 - 100 <br />
+                   onchange="this.form.crosshairsplitdist_slider.value = this.value" /> 0 - 100 <br />
 
             <br />
             <label for="crosshaircolor">Crosshair Color</label>
@@ -986,80 +992,80 @@
             <hr /> <!--========================================================================-->
             <label for="xhair_colorpicker">Crosshair Color must be set to 5 to use RGB color settings</label><br />
             <label for="xhair_colorpicker">Choose a crosshair color! Click here =></label>
-            
+
             <input type="color"
                    name="crosshair"
                    id="xhair_colorpicker"
-                   value="#32FA32"/><br />
+                   value="#32FA32" /><br />
 
             <label for="crosshaircolorr">cl_crosshaircolor_r</label>
-                <input type="range"
-                       name="crosshair"
-                       id="crosshaircolorr_slider"
-                       value="50"
-                       min="0" 
-                       max="255"
-                       oninput="this.form.crosshaircolorr.value=this.value"/>
-                <input type="number"
-                       name="crosshair"
-                       id="crosshaircolorr"
-                       value="50"
-                       min="0"
-                       max="255"
-                       maxlength="3" 
-                       oninput="this.form.crosshaircolorr_slider.value=this.value" /> 0 - 255 <br />
+            <input type="range"
+                   name="crosshair"
+                   id="crosshaircolorr_slider"
+                   value="50"
+                   min="0"
+                   max="255"
+                   onchange="this.form.crosshaircolorr.value=this.value" />
+            <input type="number"
+                   name="crosshair"
+                   id="crosshaircolorr"
+                   value="50"
+                   min="0"
+                   max="255"
+                   maxlength="3"
+                   onchange="this.form.crosshaircolorr_slider.value=this.value" /> 0 - 255 <br />
 
             <label for="crosshaircolorg">cl_crosshaircolor_g</label>
-                <input type="range"
-                       name="crosshair"
-                       id="crosshaircolorg_slider"
-                       value="250"
-                       min="0"
-                       max="255"
-                       oninput="this.form.crosshaircolorg.value=this.value" />
-                <input type="number"
-                       name="crosshair"
-                       id="crosshaircolorg"
-                       value="250"
-                       min="0"
-                       max="255"
-                       maxlength="3" 
-                       oninput="this.form.crosshaircolorg_slider.value=this.value"/> 0 - 255 <br />
-            
+            <input type="range"
+                   name="crosshair"
+                   id="crosshaircolorg_slider"
+                   value="250"
+                   min="0"
+                   max="255"
+                   onchange="this.form.crosshaircolorg.value=this.value" />
+            <input type="number"
+                   name="crosshair"
+                   id="crosshaircolorg"
+                   value="250"
+                   min="0"
+                   max="255"
+                   maxlength="3"
+                   onchange="this.form.crosshaircolorg_slider.value=this.value" /> 0 - 255 <br />
+
             <label for="crosshaircolorb">cl_crosshaircolor_b</label>
-                <input type="range"
-                       name="crosshair"
-                       id="crosshaircolorb_slider"
-                       value="50"
-                       min="0"
-                       max="255"
-                       oninput="this.form.crosshaircolorb.value=this.value" />
-                <input type="number"
-                       name="crosshair"
-                       id="crosshaircolorb"
-                       value="50"
-                       min="0"
-                       max="255"
-                       maxlength="3"
-                       oninput="this.form.crosshaircolorb_slider.value=this.value" /> 0 - 255 <br />
+            <input type="range"
+                   name="crosshair"
+                   id="crosshaircolorb_slider"
+                   value="50"
+                   min="0"
+                   max="255"
+                   onchange="this.form.crosshaircolorb.value=this.value" />
+            <input type="number"
+                   name="crosshair"
+                   id="crosshaircolorb"
+                   value="50"
+                   min="0"
+                   max="255"
+                   maxlength="3"
+                   onchange="this.form.crosshaircolorb_slider.value=this.value" /> 0 - 255 <br />
 
             <label for="crosshairalpha">Crosshair Alpha</label>
-                <input type="range"
-                       name="crosshair"
-                       id="crosshairalpha_slider"
-                       value="200"
-                       min="0"
-                       max="255"
-                       oninput="this.form.crosshairalpha.value=this.value" />
-                <input type="number"
-                       name="crosshair"
-                       id="crosshairalpha"
-                       value="200"
-                       min="0"
-                       max="255"
-                       oninput="this.form.crosshairalpha_slider.value=this.value" /> 0 - 255 <br />
+            <input type="range"
+                   name="crosshair"
+                   id="crosshairalpha_slider"
+                   value="200"
+                   min="0"
+                   max="255"
+                   onchange="this.form.crosshairalpha.value=this.value" />
+            <input type="number"
+                   name="crosshair"
+                   id="crosshairalpha"
+                   value="200"
+                   min="0"
+                   max="255"
+                   onchange="this.form.crosshairalpha_slider.value=this.value" /> 0 - 255 <br />
             <hr />
-          
+
             <label for="crosshairsize">Crosshair Size</label>
             <input type="range"
                    name="crosshair"
@@ -1067,14 +1073,14 @@
                    value="5"
                    min="0"
                    max="100"
-                   oninput="this.form.crosshairsize.value=this.value" />
+                   onchange="this.form.crosshairsize.value=this.value" />
             <input type="number"
                    name="crosshair"
                    id="crosshairsize"
                    value="5"
                    min="0"
                    max="100"
-                   oninput="this.form.crosshairsize_slider.value=this.value" /> 0 - 100 <br />
+                   onchange="this.form.crosshairsize_slider.value=this.value" /> 0 - 100 <br />
 
             <label for="crosshairthickness">Crosshair Thickness</label>
             <input type="range"
@@ -1083,14 +1089,14 @@
                    value="5"
                    min="0"
                    max="100"
-                   oninput="this.form.crosshairthickness.value=this.value" />
+                   onchange="this.form.crosshairthickness.value=this.value" />
             <input type="number"
                    name="crosshair"
                    id="crosshairthickness"
                    value="5"
                    min="0"
                    max="100"
-                   oninput="this.form.crosshairthickness_slider.value=this.value" /> 0 - 100 <br />
+                   onchange="this.form.crosshairthickness_slider.value=this.value" /> 0 - 100 <br />
 
             <label for="crosshairgap">Crosshair Gap</label>
             <input type="range"
@@ -1099,14 +1105,14 @@
                    value="5"
                    min="-100"
                    max="100"
-                   oninput="this.form.crosshairgap.value=this.value" />
+                   onchange="this.form.crosshairgap.value=this.value" />
             <input type="number"
                    name="crosshair"
                    id="crosshairgap"
                    value="5"
                    min="-100"
                    max="100"
-                   oninput="this.form.crosshairgap_slider.value=this.value" /> -100 - 100 <br />
+                   onchange="this.form.crosshairgap_slider.value=this.value" /> -100 - 100 <br />
 
             <label for="crosshairdot">Crosshair Dot</label>
             <input type="checkbox"
@@ -1125,14 +1131,14 @@
                    value="0"
                    min="0"
                    max="3"
-                   oninput="this.form.crosshairoutlinethickness.value = this.value" />
+                   onchange="this.form.crosshairoutlinethickness.value = this.value" />
             <input type="number"
                    name="crosshair"
                    id="crosshairoutlinethickness"
                    value="0"
                    min="0"
                    max="3"
-                   oninput="this.form.crosshairoutlinethickness_slider.value = this.value" /> 0 - 3 <br />
+                   onchange="this.form.crosshairoutlinethickness_slider.value = this.value" /> 0 - 3 <br />
         </fieldset>
     </form>
 
@@ -1157,7 +1163,7 @@
             <input type="checkbox"
                    name="misc"
                    id="righthand"
-                   checked /> <br />
+                   checked=checked /> <br />
 
             <label for="freezecam">Disable Freeze Camera</label>
             <input type="checkbox"
@@ -1232,7 +1238,7 @@
     <script src="js/downloadify.min.js"></script>
     <form>
         <p id="downloadify">
-            
+
         </p>
     </form>
     <script type="text/javascript">
@@ -1265,12 +1271,12 @@
     <form action="./">
         <textarea name="cfgtextarea" id="cfgtextarea" rows="40" cols="60"></textarea>
     </form><br />
-    
+
     <script src="jquery-2.1.1.js"></script>
     <script src="base62.js"></script>
     <script src="printcfg.js"></script>
     <script src="input-controls.js"></script>
-    
+
 </body>
 </html>
 

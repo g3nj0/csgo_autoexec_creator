@@ -9,12 +9,6 @@ var printEvent;
 var updateDelay = 500; // delay for which to update cfg text in milliseconds
 var autoexecText;  // We will concatenate all of the autoexec text into this var
 
-var crosshairColorpicker = $('#xhair_colorpicker');
-var crosshaircolorrObj = $('#crosshaircolorr');
-var crosshaircolorgObj = $('#crosshaircolorg');
-var crosshaircolorbObj = $('#crosshaircolorb'); 
-
-
 writeCfgFile = function () {
     autoexecText = $('#cfgtextarea').val(""); // clear text area and autoexecText
 

@@ -13,6 +13,11 @@ var inputBitTotal = 377;
 var selectBits = [3, 4, 2, 3, 2, 3, 3, 3, 2, 3];
 var selectBitTotal = 28;
 
+var crosshairColorpicker = $('#xhair_colorpicker');
+var crosshaircolorrObj = $('#crosshaircolorr');
+var crosshaircolorgObj = $('#crosshaircolorg');
+var crosshaircolorbObj = $('#crosshaircolorb');
+
 /*
 var meow = 0;
 
