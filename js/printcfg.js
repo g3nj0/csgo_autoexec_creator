@@ -81,7 +81,7 @@ writeCfgFile = function () {
     else if ($("select[name=confilterenable]").val() == 1)
         autoexecText += "con_filter_enable \"1\"\ncon_filter_text \"damage\"\n";
     else
-        autoexecText += "con_filter_enable \"1\"\ncon_filter_text \"damage\"\n";
+        autoexecText += "con_filter_enable \"2\"\ncon_filter_text \"damage\"\n";
 
     if ($("#filterplayer").prop("checked"))
         autoexecText += "con_filter_text_out \"Player:\"\n";
