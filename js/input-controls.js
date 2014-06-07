@@ -30,6 +30,7 @@ alert(meow);
 DecodeCfgValues = function () {
     var hashSet = window.location.hash.substring(1);
 
+    //var hashSet = window.location.href;
     if (hashSet.length == 0) return;
 
     var hashValues = hashSet.split("+");
@@ -199,7 +200,7 @@ EncodeCfgValues = function () {
 
         binStr += valueStr;
     })
-    console.log(binStr.length);
+    //console.log(binStr.length);
 
     while ((binStr.length % 32) != 0) { binStr = "0" + binStr; } // pad with zeroes
 
@@ -207,7 +208,8 @@ EncodeCfgValues = function () {
         hashStr += "+" + Base62.encode(parseInt(binStr.substring(i, i + 32), 2));
     //*/
 
-    window.location.hash = hashStr;
+    //window.location.hash = hashStr;
+    window.history.replaceState(null, "", "#" + hashStr);
 };
 
 RGBToColorValue = function (r, g, b) {
