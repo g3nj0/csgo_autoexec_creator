@@ -7,9 +7,9 @@
 //    of autoexec.cfg settings.
 //==============================================================
 
-//                 0                            10                            20                              30
-var inputBits  = [17, 8, 8, 6, 8, 9, 9, 9, 7, 7, 7, 7, 8, 8, 7, 7, 7, 7, 8, 7, 7, 12, 12, 5, 8, 8, 8, 8, 7, 9, 9, 9, 10, 10, 10, 7, 7, 7, 7, 8, 8, 8, 8, 7, 7, 8, 2];
-var inputBitTotal = 377;
+//                 0                            10                            20                              30                               40
+var inputBits  = [17, 8, 8, 6, 8, 9, 9, 9, 7, 7, 7, 7, 8, 8, 7, 7, 7, 7, 8, 7, 7, 12, 12, 5, 8, 8, 8, 8, 7, 9, 9, 9, 10, 10, 10, 7, 7, 7, 7, 8, 8, 8, 8, 12, 12, 8, 2];
+var inputBitTotal = 387;
 var selectBits = [3, 4, 2, 3, 2, 3, 3, 3, 2, 3];
 var selectBitTotal = 28;
 
@@ -18,7 +18,7 @@ var crosshaircolorrObj = $('#crosshaircolorr');
 var crosshaircolorgObj = $('#crosshaircolorg');
 var crosshaircolorbObj = $('#crosshaircolorb');
 
-/*
+
 var meow = 0;
 
 for (var i = 0; i < inputBits.length; i++)
@@ -114,6 +114,9 @@ DecodeCfgValues = function () {
         var rangeValue = parseInt(rangeInfo, 2);
         //console.log(rangeIndex);
         //console.log(rangeValue + "\n");
+        if ($(this).is($('#crosshairsize_slider')))
+            console.log("Desired index - " + index);
+
         if ($(this).attr('step') < 1){
             rangeValue *= 0.01;
 
