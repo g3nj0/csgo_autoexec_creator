@@ -18,7 +18,7 @@ var crosshaircolorrObj = $('#crosshaircolorr');
 var crosshaircolorgObj = $('#crosshaircolorg');
 var crosshaircolorbObj = $('#crosshaircolorb');
 
-
+/*
 var meow = 0;
 
 for (var i = 0; i < inputBits.length; i++)
